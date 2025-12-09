@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* 🔥 Fundo com animação MUITO forte */
+        .video-background {
+            position: absolute;
+            width: 92vw;
+            max-width: 900px;
+            height: auto;
+            aspect-ratio: 16/9;
+            border-radius: 25px;
+
+            /* Neon muito forte */
+            box-shadow:
+                0 0 80px rgba(255, 0, 0, 1),
+                0 0 150px rgba(255, 0, 0, 0.9),
+                0 0 250px rgba(255, 0, 0, 0.8);
+
+            animation: superGlow 2.5s infinite ease-in-out;
+        }
+
+        /* 🔥 ANIMAÇÃO EXTREMA DO FUNDO */
+        @keyframes superGlow {
+            0% {
+                box-shadow:
+                    0 0 80px rgba(255, 0, 0, 1),
+                    0 0 150px rgba(255, 0, 0, 0.9),
+                    0 0 250px rgba(255, 0, 0, 0.7);
+            }
+            50% {
+                box-shadow:
+                    0 0 130px rgba(255, 0, 0, 1),
+                    0 0 220px rgba(255, 0, 0, 1),
+                    0 0 350px rgba(255, 0, 0, 0.9);
+            }
+            100% {
+                box-shadow:
+                    0 0 80px rgba(255, 0, 0, 1),
+                    0 0 150px rgba(255, 0, 0, 0.9),
+                    0 0 250px rgba(255, 0, 0, 0.7);
+            }
+        }
+
+        /* 🔥 Vídeo no topo do glow */
+        video {
+            position: relative;
+            width: 92vw;
+            max-width: 900px;
+            border-radius: 25px;
+
+            /* Leve profundidade */
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="video-background"></div>
+
+    <video autoplay loop controls>
+        <source src="ssstik.io_@ihatewrath_1765259222189.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>

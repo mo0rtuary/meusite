@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #000000; /* fundo preto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-box {
+            position: relative;
+            padding: 15px;
+            border-radius: 30px;
+
+            /* 🔥 Borda super profissional com animação neon */
+            background: linear-gradient(45deg, #ff0000, #7a0000, #ff2222, #5a0000);
+            background-size: 400% 400%;
+            animation: neonBorder 6s ease-in-out infinite;
+            box-shadow: 
+                0 0 25px rgba(255,0,0,0.8),
+                0 0 60px rgba(255,0,0,0.6),
+                0 0 120px rgba(255,0,0,0.4);
+        }
+
+        /* 🔥 Animação da borda */
+        @keyframes neonBorder {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        video {
+            width: 90vw;
+            max-width: 900px;
+            border-radius: 20px;
+
+            /* Efeito interno suave */
+            box-shadow:
+                inset 0 0 30px rgba(0,0,0,0.4),
+                inset 0 0 60px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-box">
+        <video autoplay loop controls>
+            <source src="ssstik.io_@ihatewrath_1765259222189.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>

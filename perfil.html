@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <h1>Meu Perfil</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- CARTÃO DE FOTO -->
+  <div class="card profile-card">
+    <img id="fotoPerfil" src="https://i.imgur.com/QnU7P7D.png">
+    <br>
+    <input type="file" id="trocarFoto" style="display:none;">
+    <button onclick="trocarFoto()">Trocar Foto</button>
+  </div>
+
+  <!-- FUNÇÕES -->
+  <div class="card">
+    <h2>Funções do Perfil</h2>
+
+    <button onclick="alterarNome()">1. Alterar Nome</button><br><br>
+    <button onclick="alterarBio()">2. Alterar Bio</button><br><br>
+    <button onclick="trocarTema()">3. Trocar Tema (Claro/Escuro)</button><br><br>
+    <button onclick="resetarPerfil()">4. Resetar Perfil</button><br><br>
+    <button onclick="mudarCorCartoes()">5. Mudar cor dos cartões</button><br><br>
+    <button onclick="adicionarStatus()">6. Adicionar Status</button><br><br>
+    <button onclick="adicionarLink()">7. Adicionar Link pessoal</button><br><br>
+    <button onclick="mostrarData()">8. Mostrar data de criação</button><br><br>
+    <button onclick="ativarNotificacoes()">9. Ativar notificações fake</button><br><br>
+    <button onclick="confetes()">10. Lançar Confetes 🎉</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
